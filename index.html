@@ -406,47 +406,47 @@
           </div>
         </div>
       </div>
-      <div class="booking-form reveal">
-        <div class="form-row">
-          <div class="form-group">
-            <label class="form-label">Full Name</label>
-            <input class="form-input" type="text" placeholder="Your name">
-          </div>
-          <div class="form-group">
-            <label class="form-label">Phone / Email</label>
-            <input class="form-input" type="text" placeholder="How to reach you">
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label class="form-label">Date</label>
-            <input class="form-input" type="date">
-          </div>
-          <div class="form-group">
-            <label class="form-label">Time</label>
-            <input class="form-input" type="time">
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="form-label">Party Size</label>
-          <select class="form-select form-input">
-            <option value="">Select guests</option>
-            <option>1 – 2 guests</option>
-            <option>3 – 4 guests</option>
-            <option>5 – 6 guests</option>
-            <option>7+ guests</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label class="form-label">Special Requests</label>
-          <textarea class="form-textarea" placeholder="Window seat preference, dietary requirements, occasion…"></textarea>
-        </div>
-        <button class="form-submit">Request a Reservation</button>
-        <p class="form-note">We'll confirm your booking within a few hours.</p>
-      </div>
+      <form class="booking-form reveal" action="https://formspree.io/f/mwvjobyk" method="POST">
+  <div class="form-row">
+    <div class="form-group">
+      <label class="form-label">Full Name</label>
+      <input class="form-input" type="text" name="name" placeholder="Your name" required>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Phone / Email</label>
+      <input class="form-input" type="text" name="contact" placeholder="How to reach you" required>
     </div>
   </div>
-</section>
+  <div class="form-row">
+    <div class="form-group">
+      <label class="form-label">Date</label>
+      <input class="form-input" type="date" name="date" required>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Time</label>
+      <input class="form-input" type="time" name="time" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="form-label">Party Size</label>
+    <select class="form-select form-input" name="party_size">
+      <option value="">Select guests</option>
+      <option>1 – 2 guests</option>
+      <option>3 – 4 guests</option>
+      <option>5 – 6 guests</option>
+      <option>7+ guests</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label class="form-label">Special Requests</label>
+    <textarea class="form-textarea" name="special_requests" placeholder="Window seat preference, dietary requirements, occasion…"></textarea>
+  </div>
+  <button type="submit" class="form-submit">Request a Reservation</button>
+      <p class="form-note">We'll confirm your booking within a few hours.</p>
+    </form>
+    </div>
+  </div>
+</section>  
 
 <!-- FOOTER -->
 <footer>
